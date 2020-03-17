@@ -1,10 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import Welcome from './pages/Welcome';
+import GlobalStyle from './lib/styles/GlobalStyle';
+
+const App: React.FC = () => {
   return (
-    <div>
-      asdf
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Switch>
+        <Route path="/">
+          <Welcome />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
