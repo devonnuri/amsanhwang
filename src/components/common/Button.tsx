@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { transparentize } from 'polished';
 import palette from '../../lib/styles/palette';
 
 const ButtonContainer = styled.div<{ color: ColorType; size: ButtonSize; }>`
@@ -16,7 +17,12 @@ const ButtonContainer = styled.div<{ color: ColorType; size: ButtonSize; }>`
     props.color === 'blue' &&
     css`
       background: ${palette.blue500};
+      box-shadow: 0px 4px 60px ${transparentize(0.6, palette.blue500)};
       color: white;
+
+      &:hover {
+        background: ${palette.blue600};
+      }
     `}
   
   ${props =>

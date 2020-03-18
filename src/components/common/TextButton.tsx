@@ -25,7 +25,7 @@ interface ButtonProps extends Omit<React.HTMLProps<HTMLButtonElement>, 'size'> {
   color?: ColorType;
 }
 
-const LinkButton: React.FC<ButtonProps> = ({
+const TextButton: React.FC<ButtonProps> = ({
   children,
   color = 'blue',
   ...rest
@@ -46,4 +46,4 @@ const LinkButton: React.FC<ButtonProps> = ({
   );
 }
 
-export default LinkButton;
+export default TextButton;

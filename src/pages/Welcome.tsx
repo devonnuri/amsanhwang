@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import Logo from '../components/common/Logo';
 import Button from '../components/common/Button';
-import LinkButton from '../components/common/LinkButton';
+import TextButton from '../components/common/TextButton';
 
 const WelcomeContainer = styled.div`
   display: flex;
@@ -19,8 +20,7 @@ const Typo = styled.div`
     justify-content: center;
   font-size: 5em;
   p {
-    flex: 0 0 0;
-    margin: 1rem 0;
+    margin: 0;
   }
 `;
 
@@ -47,10 +47,12 @@ const Welcome: React.FC = () => {
         <p><b>방과후 신청</b>까지</p>
       </Typo>
       <ButtonSet>
-        <Button size="medium">로그인</Button>
+        <Link to="/login">
+          <Button size="medium">로그인</Button>
+        </Link>
         <RegisterTypo>
           아직 회원이 아니신가요?
-          <LinkButton>회원가입</LinkButton>
+          <TextButton>회원가입</TextButton>
         </RegisterTypo>
       </ButtonSet>
     </WelcomeContainer>

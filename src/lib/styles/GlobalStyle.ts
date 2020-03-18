@@ -20,6 +20,13 @@ html, body, #root {
 
 * {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
 }
 
 @font-face {
