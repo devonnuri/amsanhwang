@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import palette from '../../lib/styles/palette';
+import media from '../../lib/styles/media';
 
 const LogoContainer = styled.h1`
   display: inline-flex;
@@ -10,6 +11,10 @@ const LogoContainer = styled.h1`
   font-family: 'CircularStd';
   font-weight: 600;
   font-size: 5em;
+
+  ${media.small} {
+    font-size: 4em;
+  }
 `;
 
 const Keyword = styled.span`

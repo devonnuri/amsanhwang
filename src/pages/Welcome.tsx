@@ -5,20 +5,34 @@ import { Link } from 'react-router-dom';
 import Logo from '../components/common/Logo';
 import Button from '../components/common/Button';
 import TextButton from '../components/common/TextButton';
+import media from '../lib/styles/media';
 
 const WelcomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 5rem;
   height: 100%;
+
+  ${media.small} {
+    padding: 0 3rem;
+  }
 `;
 
 const Typo = styled.div`
   flex: 2;
   display: inline-flex;
   flex-direction: column;
-    justify-content: center;
+  justify-content: center;
   font-size: 5em;
+
+  ${media.medium} {
+    font-size: 4em;
+  }
+
+  ${media.small} {
+    font-size: 10vw;
+  }
+
   p {
     margin: 0;
   }
