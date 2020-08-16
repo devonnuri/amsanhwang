@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { MdPerson, MdVpnKey } from 'react-icons/md';
 
-import Logo from '../components/common/Logo';
 import TextInput from '../components/common/TextInput';
 import media from '../lib/styles/media';
 import Button from '../components/common/Button';
@@ -34,7 +33,6 @@ const LoginPage: React.FC = () => {
 
   return (
     <LoginContainer>
-      <Logo keyword="log"/>
       <FormContainer>
         <h1>환영합니다! <span role="img" aria-label="흔드는 손">👋</span></h1>
         <TextInput

@@ -13,23 +13,18 @@ const LogoContainer = styled.h1`
   font-size: 5em;
 
   ${media.small} {
-    font-size: 4em;
+    font-size: 9.6vw;
   }
 `;
 
-const Keyword = styled.span`
+const Highlight = styled.span`
   color: ${palette.blue500};
 `;
 
-interface LogoProps {
-  keyword?: string;
-}
-
-const Logo: React.FC<LogoProps> = ({ keyword }) => {
+const Logo: React.FC<{}> = () => {
   return (
     <LogoContainer>
-      <Keyword>{keyword || 'woollim'}</Keyword>
-      .in
+      <Highlight>amsan</Highlight>hwang
     </LogoContainer>
   );
 }
