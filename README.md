@@ -1,2 +1,2 @@
-# woollimin-client
-> Client for woollim.in
+# amsanhwang
+> To be an EMPEROR of Amsan(mental arithmetic) 
